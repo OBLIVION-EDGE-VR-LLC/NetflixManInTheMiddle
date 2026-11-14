@@ -1,0 +1,498 @@
+2026-08-04 21:47:20,220 - __main__ - INFO - ================================================================================
+2026-08-04 21:47:20,220 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 21:47:20,220 - __main__ - INFO - Listening on port 9999
+2026-08-04 21:47:20,220 - __main__ - INFO - ================================================================================
+2026-08-04 21:47:20,221 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.4:9999
+2026-08-04 21:47:20,221 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 21:47:33,914 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:47:33] "GET /health HTTP/1.1" 200 -
+2026-08-04 21:47:33,919 - __main__ - INFO - [REQUEST] GET /login from 172.21.0.1
+2026-08-04 21:47:33,919 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:47:33] "GET /login HTTP/1.1" 200 -
+2026-08-04 21:47:33,920 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 21:47:33,920 - __main__ - WARNING - [CREDS] Email: attacker_test@example.com
+2026-08-04 21:47:33,920 - __main__ - WARNING - [CREDS] Password: SuperSecretPassword123!
+2026-08-04 21:47:33,921 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:47:33] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 21:47:33,922 - __main__ - INFO - [REQUEST] GET /signup from 172.21.0.1
+2026-08-04 21:47:33,922 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:47:33] "GET /signup HTTP/1.1" 200 -
+2026-08-04 21:47:33,923 - __main__ - INFO - [SIGNUP] New account attempt from 172.21.0.1
+2026-08-04 21:47:33,923 - __main__ - WARNING - [CREDS] Email: signup_test@example.com
+2026-08-04 21:47:33,923 - __main__ - WARNING - [CREDS] Password: AnotherPassword456!@#
+2026-08-04 21:47:33,924 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:47:33] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-08-04 21:47:33,925 - __main__ - INFO - [PROFILE] Profile access from 172.21.0.1
+2026-08-04 21:47:33,925 - __main__ - WARNING - [AUTH] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdW...
+2026-08-04 21:47:33,925 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:47:33] "GET /api/user/profile HTTP/1.1" 200 -
+2026-08-04 21:48:59,496 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:48:59] "GET /health HTTP/1.1" 200 -
+2026-08-04 21:48:59,499 - __main__ - INFO - [REQUEST] GET /login from 172.21.0.1
+2026-08-04 21:48:59,499 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:48:59] "GET /login HTTP/1.1" 200 -
+2026-08-04 21:48:59,500 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 21:48:59,500 - __main__ - WARNING - [CREDS] Email: attacker_test@example.com
+2026-08-04 21:48:59,501 - __main__ - WARNING - [CREDS] Password: SuperSecretPassword123!
+2026-08-04 21:48:59,501 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:48:59] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 21:48:59,502 - __main__ - INFO - [REQUEST] GET /signup from 172.21.0.1
+2026-08-04 21:48:59,502 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:48:59] "GET /signup HTTP/1.1" 200 -
+2026-08-04 21:48:59,503 - __main__ - INFO - [SIGNUP] New account attempt from 172.21.0.1
+2026-08-04 21:48:59,503 - __main__ - WARNING - [CREDS] Email: signup_test@example.com
+2026-08-04 21:48:59,503 - __main__ - WARNING - [CREDS] Password: AnotherPassword456!@#
+2026-08-04 21:48:59,503 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:48:59] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-08-04 21:48:59,505 - __main__ - INFO - [PROFILE] Profile access from 172.21.0.1
+2026-08-04 21:48:59,505 - __main__ - WARNING - [AUTH] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdW...
+2026-08-04 21:48:59,505 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:48:59] "GET /api/user/profile HTTP/1.1" 200 -
+2026-08-04 21:58:05,172 - __main__ - INFO - ================================================================================
+2026-08-04 21:58:05,172 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 21:58:05,172 - __main__ - INFO - Listening on port 9999
+2026-08-04 21:58:05,172 - __main__ - INFO - ================================================================================
+2026-08-04 21:58:05,173 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.3:9999
+2026-08-04 21:58:05,173 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 21:58:28,332 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:28] "GET /health HTTP/1.1" 200 -
+2026-08-04 21:58:28,335 - __main__ - INFO - [REQUEST] GET /login from 172.21.0.1
+2026-08-04 21:58:28,336 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:28] "GET /login HTTP/1.1" 200 -
+2026-08-04 21:58:28,337 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 21:58:28,337 - __main__ - WARNING - [CREDS] Email: attacker_test@example.com
+2026-08-04 21:58:28,337 - __main__ - WARNING - [CREDS] Password: SuperSecretPassword123!
+2026-08-04 21:58:28,338 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:28] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 21:58:28,339 - __main__ - INFO - [REQUEST] GET /signup from 172.21.0.1
+2026-08-04 21:58:28,339 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:28] "GET /signup HTTP/1.1" 200 -
+2026-08-04 21:58:28,340 - __main__ - INFO - [SIGNUP] New account attempt from 172.21.0.1
+2026-08-04 21:58:28,340 - __main__ - WARNING - [CREDS] Email: signup_test@example.com
+2026-08-04 21:58:28,340 - __main__ - WARNING - [CREDS] Password: AnotherPassword456!@#
+2026-08-04 21:58:28,340 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:28] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-08-04 21:58:28,342 - __main__ - INFO - [PROFILE] Profile access from 172.21.0.1
+2026-08-04 21:58:28,342 - __main__ - WARNING - [AUTH] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdW...
+2026-08-04 21:58:28,342 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:28] "GET /api/user/profile HTTP/1.1" 200 -
+2026-08-04 21:58:57,420 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:57] "GET /health HTTP/1.1" 200 -
+2026-08-04 21:58:57,424 - __main__ - INFO - [REQUEST] GET /login from 172.21.0.1
+2026-08-04 21:58:57,424 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:57] "GET /login HTTP/1.1" 200 -
+2026-08-04 21:58:57,426 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 21:58:57,426 - __main__ - WARNING - [CREDS] Email: attacker_test@example.com
+2026-08-04 21:58:57,426 - __main__ - WARNING - [CREDS] Password: SuperSecretPassword123!
+2026-08-04 21:58:57,426 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:57] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 21:58:57,427 - __main__ - INFO - [REQUEST] GET /signup from 172.21.0.1
+2026-08-04 21:58:57,427 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:57] "GET /signup HTTP/1.1" 200 -
+2026-08-04 21:58:57,428 - __main__ - INFO - [SIGNUP] New account attempt from 172.21.0.1
+2026-08-04 21:58:57,428 - __main__ - WARNING - [CREDS] Email: signup_test@example.com
+2026-08-04 21:58:57,428 - __main__ - WARNING - [CREDS] Password: AnotherPassword456!@#
+2026-08-04 21:58:57,429 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:57] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-08-04 21:58:57,430 - __main__ - INFO - [PROFILE] Profile access from 172.21.0.1
+2026-08-04 21:58:57,430 - __main__ - WARNING - [AUTH] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdW...
+2026-08-04 21:58:57,430 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:58:57] "GET /api/user/profile HTTP/1.1" 200 -
+2026-08-04 21:59:11,484 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:59:11] "GET /health HTTP/1.1" 200 -
+2026-08-04 21:59:11,487 - __main__ - INFO - [REQUEST] GET /login from 172.21.0.1
+2026-08-04 21:59:11,487 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:59:11] "GET /login HTTP/1.1" 200 -
+2026-08-04 21:59:11,488 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 21:59:11,488 - __main__ - WARNING - [CREDS] Email: attacker_test@example.com
+2026-08-04 21:59:11,488 - __main__ - WARNING - [CREDS] Password: SuperSecretPassword123!
+2026-08-04 21:59:11,488 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:59:11] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 21:59:11,490 - __main__ - INFO - [REQUEST] GET /signup from 172.21.0.1
+2026-08-04 21:59:11,490 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:59:11] "GET /signup HTTP/1.1" 200 -
+2026-08-04 21:59:11,491 - __main__ - INFO - [SIGNUP] New account attempt from 172.21.0.1
+2026-08-04 21:59:11,491 - __main__ - WARNING - [CREDS] Email: signup_test@example.com
+2026-08-04 21:59:11,491 - __main__ - WARNING - [CREDS] Password: AnotherPassword456!@#
+2026-08-04 21:59:11,491 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:59:11] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-08-04 21:59:11,492 - __main__ - INFO - [PROFILE] Profile access from 172.21.0.1
+2026-08-04 21:59:11,492 - __main__ - WARNING - [AUTH] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdW...
+2026-08-04 21:59:11,492 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 21:59:11] "GET /api/user/profile HTTP/1.1" 200 -
+2026-08-04 22:01:39,484 - __main__ - INFO - ================================================================================
+2026-08-04 22:01:39,485 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 22:01:39,485 - __main__ - INFO - Listening on port 9999
+2026-08-04 22:01:39,485 - __main__ - INFO - ================================================================================
+2026-08-04 22:01:39,486 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 22:01:39,486 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 22:01:57,456 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:01:57] "GET /health HTTP/1.1" 200 -
+2026-08-04 22:01:57,459 - __main__ - INFO - [REQUEST] GET /login from 172.21.0.1
+2026-08-04 22:01:57,459 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:01:57] "GET /login HTTP/1.1" 200 -
+2026-08-04 22:01:57,461 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:01:57,461 - __main__ - WARNING - [CREDS] Email: attacker_test@example.com
+2026-08-04 22:01:57,461 - __main__ - WARNING - [CREDS] Password: SuperSecretPassword123!
+2026-08-04 22:01:57,461 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:01:57] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:01:57,465 - __main__ - INFO - [REQUEST] GET /signup from 172.21.0.1
+2026-08-04 22:01:57,465 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:01:57] "GET /signup HTTP/1.1" 200 -
+2026-08-04 22:01:57,466 - __main__ - INFO - [SIGNUP] New account attempt from 172.21.0.1
+2026-08-04 22:01:57,466 - __main__ - WARNING - [CREDS] Email: signup_test@example.com
+2026-08-04 22:01:57,466 - __main__ - WARNING - [CREDS] Password: AnotherPassword456!@#
+2026-08-04 22:01:57,467 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:01:57] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-08-04 22:01:57,471 - __main__ - INFO - [PROFILE] Profile access from 172.21.0.1
+2026-08-04 22:01:57,471 - __main__ - WARNING - [AUTH] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdW...
+2026-08-04 22:01:57,472 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:01:57] "GET /api/user/profile HTTP/1.1" 200 -
+2026-08-04 22:02:46,140 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:46] "GET /health HTTP/1.1" 200 -
+2026-08-04 22:02:46,144 - __main__ - INFO - [REQUEST] GET /login from 172.21.0.1
+2026-08-04 22:02:46,144 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:46] "GET /login HTTP/1.1" 200 -
+2026-08-04 22:02:46,146 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:02:46,146 - __main__ - WARNING - [CREDS] Email: attacker_test@example.com
+2026-08-04 22:02:46,146 - __main__ - WARNING - [CREDS] Password: SuperSecretPassword123!
+2026-08-04 22:02:46,146 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:46] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:02:46,149 - __main__ - INFO - [REQUEST] GET /signup from 172.21.0.1
+2026-08-04 22:02:46,150 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:46] "GET /signup HTTP/1.1" 200 -
+2026-08-04 22:02:46,150 - __main__ - INFO - [SIGNUP] New account attempt from 172.21.0.1
+2026-08-04 22:02:46,151 - __main__ - WARNING - [CREDS] Email: signup_test@example.com
+2026-08-04 22:02:46,151 - __main__ - WARNING - [CREDS] Password: AnotherPassword456!@#
+2026-08-04 22:02:46,151 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:46] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-08-04 22:02:46,154 - __main__ - INFO - [PROFILE] Profile access from 172.21.0.1
+2026-08-04 22:02:46,154 - __main__ - WARNING - [AUTH] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdW...
+2026-08-04 22:02:46,154 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:46] "GET /api/user/profile HTTP/1.1" 200 -
+2026-08-04 22:02:55,757 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:55] "GET /health HTTP/1.1" 200 -
+2026-08-04 22:02:55,761 - __main__ - INFO - [REQUEST] GET /login from 172.21.0.1
+2026-08-04 22:02:55,761 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:55] "GET /login HTTP/1.1" 200 -
+2026-08-04 22:02:55,763 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:02:55,763 - __main__ - WARNING - [CREDS] Email: attacker_test@example.com
+2026-08-04 22:02:55,763 - __main__ - WARNING - [CREDS] Password: SuperSecretPassword123!
+2026-08-04 22:02:55,763 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:55] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:02:55,766 - __main__ - INFO - [REQUEST] GET /signup from 172.21.0.1
+2026-08-04 22:02:55,766 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:55] "GET /signup HTTP/1.1" 200 -
+2026-08-04 22:02:55,767 - __main__ - INFO - [SIGNUP] New account attempt from 172.21.0.1
+2026-08-04 22:02:55,768 - __main__ - WARNING - [CREDS] Email: signup_test@example.com
+2026-08-04 22:02:55,768 - __main__ - WARNING - [CREDS] Password: AnotherPassword456!@#
+2026-08-04 22:02:55,768 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:55] "[35m[1mPOST /api/auth/signup HTTP/1.1[0m" 201 -
+2026-08-04 22:02:55,771 - __main__ - INFO - [PROFILE] Profile access from 172.21.0.1
+2026-08-04 22:02:55,771 - __main__ - WARNING - [AUTH] Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdW...
+2026-08-04 22:02:55,771 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:02:55] "GET /api/user/profile HTTP/1.1" 200 -
+2026-08-04 22:16:33,360 - __main__ - INFO - ================================================================================
+2026-08-04 22:16:33,360 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 22:16:33,361 - __main__ - INFO - Listening on port 9999
+2026-08-04 22:16:33,361 - __main__ - INFO - ================================================================================
+2026-08-04 22:16:33,362 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.3:9999
+2026-08-04 22:16:33,362 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 22:21:03,738 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:21:03,738 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:21:03] "GET / HTTP/1.1" 200 -
+2026-08-04 22:21:03,802 - __main__ - WARNING - [404] Not found: /favicon.ico from 172.21.0.1
+2026-08-04 22:21:03,802 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:21:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-08-04 22:22:36,325 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:22:36,325 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 22:22:36,325 - __main__ - WARNING - [CREDS] Password: lettttssssgooooo
+2026-08-04 22:22:36,326 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:22:36] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:29:06,484 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:29:06,484 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:29:06] "GET / HTTP/1.1" 200 -
+2026-08-04 22:29:08,202 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:29:08,202 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:29:08] "GET / HTTP/1.1" 200 -
+2026-08-04 22:29:42,901 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:29:42,901 - __main__ - WARNING - [CREDS] Email: computercrime@gerirlady.com
+2026-08-04 22:29:42,901 - __main__ - WARNING - [CREDS] Password: leeeettttsssggggooo
+2026-08-04 22:29:42,901 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:29:42] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:34:57,486 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:34:57,487 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:34:57] "GET / HTTP/1.1" 200 -
+2026-08-04 22:35:25,404 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:35:25,404 - __main__ - WARNING - [CREDS] Email: computercrime@someaddress.com
+2026-08-04 22:35:25,404 - __main__ - WARNING - [CREDS] Password: balllllinnnnn
+2026-08-04 22:35:25,404 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:35:25] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:39:03,705 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:39:03,705 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:39:03] "GET / HTTP/1.1" 200 -
+2026-08-04 22:39:32,981 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:39:32,981 - __main__ - WARNING - [CREDS] Email: computercrime@somethibg.com
+2026-08-04 22:39:32,981 - __main__ - WARNING - [CREDS] Password: blajhahahhaleeetttssgo
+2026-08-04 22:39:32,982 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:39:32] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:40:47,373 - __main__ - INFO - ================================================================================
+2026-08-04 22:40:47,373 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 22:40:47,373 - __main__ - INFO - Listening on port 9999
+2026-08-04 22:40:47,373 - __main__ - INFO - ================================================================================
+2026-08-04 22:40:47,374 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 22:40:47,374 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 22:40:59,704 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:40:59,704 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:40:59] "GET / HTTP/1.1" 200 -
+2026-08-04 22:41:13,343 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:41:13,344 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 22:41:13,344 - __main__ - WARNING - [CREDS] Password: hahhaahah
+2026-08-04 22:41:13,344 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:41:13] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:44:08,988 - __main__ - INFO - ================================================================================
+2026-08-04 22:44:08,988 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 22:44:08,988 - __main__ - INFO - Listening on port 9999
+2026-08-04 22:44:08,988 - __main__ - INFO - ================================================================================
+2026-08-04 22:44:08,989 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 22:44:08,989 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 22:44:46,540 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:44:46,540 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:44:46] "GET / HTTP/1.1" 200 -
+2026-08-04 22:44:59,005 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:44:59,005 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 22:44:59,005 - __main__ - WARNING - [CREDS] Password: leeetttsssgo
+2026-08-04 22:44:59,006 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:44:59] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:48:53,811 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:48:53,812 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:48:53] "GET / HTTP/1.1" 200 -
+2026-08-04 22:49:13,425 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 22:49:13,425 - __main__ - WARNING - [CREDS] Email: computercrime@hello.com
+2026-08-04 22:49:13,425 - __main__ - WARNING - [CREDS] Password: deeeeeezzzz nuuuuttttzzzz
+2026-08-04 22:49:13,426 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:49:13] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 22:49:25,937 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:49:25,938 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:49:25] "GET / HTTP/1.1" 200 -
+2026-08-04 22:58:03,984 - __main__ - INFO - ================================================================================
+2026-08-04 22:58:03,984 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 22:58:03,984 - __main__ - INFO - Listening on port 9999
+2026-08-04 22:58:03,984 - __main__ - INFO - ================================================================================
+2026-08-04 22:58:03,985 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 22:58:03,985 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 22:59:41,508 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 22:59:41,508 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 22:59:41] "GET / HTTP/1.1" 200 -
+2026-08-04 23:00:09,032 - __main__ - INFO - ================================================================================
+2026-08-04 23:00:09,032 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:00:09,032 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:00:09,032 - __main__ - INFO - ================================================================================
+2026-08-04 23:00:09,033 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 23:00:09,033 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:00:47,845 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:00:47,845 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 23:00:47,845 - __main__ - WARNING - [CREDS] Password: leeetttsssgooo
+2026-08-04 23:00:47,846 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:00:47] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 23:00:57,115 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:00:57] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 405 -
+2026-08-04 23:01:12,112 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:01:12,112 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:01:12] "GET / HTTP/1.1" 200 -
+2026-08-04 23:03:24,791 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:03:24,791 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:03:24] "GET / HTTP/1.1" 200 -
+2026-08-04 23:03:56,485 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:03:56,485 - __main__ - WARNING - [CREDS] Email: crimepays@yahoo.com
+2026-08-04 23:03:56,485 - __main__ - WARNING - [CREDS] Password: leeettsssgooyeah
+2026-08-04 23:03:56,486 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:03:56] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 23:04:09,747 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:04:09] "[31m[1mGET /api/auth/login HTTP/1.1[0m" 405 -
+2026-08-04 23:05:19,615 - __main__ - INFO - ================================================================================
+2026-08-04 23:05:19,615 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:05:19,615 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:05:19,616 - __main__ - INFO - ================================================================================
+2026-08-04 23:05:19,616 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 23:05:19,616 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:05:44,212 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:05:44,213 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:05:44] "GET / HTTP/1.1" 200 -
+2026-08-04 23:05:55,094 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:05:55,094 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 23:05:55,094 - __main__ - WARNING - [CREDS] Password: helloman
+2026-08-04 23:05:55,095 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:05:55] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 23:08:18,371 - __main__ - INFO - ================================================================================
+2026-08-04 23:08:18,371 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:08:18,371 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:08:18,371 - __main__ - INFO - ================================================================================
+2026-08-04 23:08:18,372 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 23:08:18,372 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:08:36,073 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:08:36,074 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:08:36] "GET / HTTP/1.1" 200 -
+2026-08-04 23:08:49,021 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:08:49,021 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 23:08:49,021 - __main__ - WARNING - [CREDS] Password: dddeeeezzzznuts
+2026-08-04 23:08:49,021 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:08:49] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 23:10:28,676 - __main__ - INFO - ================================================================================
+2026-08-04 23:10:28,676 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:10:28,676 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:10:28,676 - __main__ - INFO - ================================================================================
+2026-08-04 23:10:28,677 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 23:10:28,677 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:10:55,804 - __main__ - INFO - ================================================================================
+2026-08-04 23:10:55,804 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:10:55,804 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:10:55,804 - __main__ - INFO - ================================================================================
+2026-08-04 23:10:55,805 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.4:9999
+2026-08-04 23:10:55,805 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:11:17,619 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:11:17,620 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:11:17] "GET / HTTP/1.1" 200 -
+2026-08-04 23:11:28,599 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:11:28,599 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 23:11:28,599 - __main__ - WARNING - [CREDS] Password: ddddeeeexxzznutzzzz
+2026-08-04 23:11:28,599 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:11:28] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 23:13:22,178 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:13:22,178 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:13:22] "GET / HTTP/1.1" 200 -
+2026-08-04 23:13:33,407 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:13:33,407 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 23:13:33,407 - __main__ - WARNING - [CREDS] Password: bahahahhaha
+2026-08-04 23:13:33,407 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:13:33] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 23:15:45,215 - __main__ - INFO - ================================================================================
+2026-08-04 23:15:45,215 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:15:45,215 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:15:45,215 - __main__ - INFO - ================================================================================
+2026-08-04 23:15:45,216 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.4:9999
+2026-08-04 23:15:45,216 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:16:09,753 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:16:09,753 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:16:09] "GET / HTTP/1.1" 200 -
+2026-08-04 23:16:19,625 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:16:19,626 - __main__ - WARNING - [CREDS] Email: computercrime@gerirlady.com
+2026-08-04 23:16:19,626 - __main__ - WARNING - [CREDS] Password: bahahaha
+2026-08-04 23:16:19,626 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:16:19] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 23:17:46,081 - __main__ - INFO - ================================================================================
+2026-08-04 23:17:46,081 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:17:46,081 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:17:46,081 - __main__ - INFO - ================================================================================
+2026-08-04 23:17:46,081 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.4:9999
+2026-08-04 23:17:46,081 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:18:11,239 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:18:11,239 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:18:11] "GET / HTTP/1.1" 200 -
+2026-08-04 23:18:25,497 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:18:25,497 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 23:18:25,497 - __main__ - WARNING - [CREDS] Password: derpppp
+2026-08-04 23:18:25,498 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:18:25] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-04 23:18:57,936 - __main__ - INFO - ================================================================================
+2026-08-04 23:18:57,936 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:18:57,936 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:18:57,936 - __main__ - INFO - ================================================================================
+2026-08-04 23:18:57,937 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 23:18:57,937 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:19:21,336 - __main__ - INFO - ================================================================================
+2026-08-04 23:19:21,336 - __main__ - INFO - Mock Netflix Server Started
+2026-08-04 23:19:21,336 - __main__ - INFO - Listening on port 9999
+2026-08-04 23:19:21,336 - __main__ - INFO - ================================================================================
+2026-08-04 23:19:21,337 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-04 23:19:21,337 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-04 23:19:44,660 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-04 23:19:44,660 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:19:44] "GET / HTTP/1.1" 200 -
+2026-08-04 23:19:51,094 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-04 23:19:51,094 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-04 23:19:51,094 - __main__ - WARNING - [CREDS] Password: bahahhaa
+2026-08-04 23:19:51,094 - werkzeug - INFO - 172.21.0.1 - - [04/Aug/2026 23:19:51] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-05 09:04:50,434 - __main__ - INFO - ================================================================================
+2026-08-05 09:04:50,434 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 09:04:50,434 - __main__ - INFO - Listening on port 9999
+2026-08-05 09:04:50,434 - __main__ - INFO - ================================================================================
+2026-08-05 09:04:50,435 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-05 09:04:50,435 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 09:05:06,680 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-05 09:05:06,680 - werkzeug - INFO - 172.21.0.1 - - [05/Aug/2026 09:05:06] "GET / HTTP/1.1" 200 -
+2026-08-05 09:05:22,158 - __main__ - INFO - [AUTH] Login attempt from 172.21.0.1
+2026-08-05 09:05:22,158 - __main__ - WARNING - [CREDS] Email: computercrime@yahoo.com
+2026-08-05 09:05:22,158 - __main__ - WARNING - [CREDS] Password: helloWorld
+2026-08-05 09:05:22,158 - werkzeug - INFO - 172.21.0.1 - - [05/Aug/2026 09:05:22] "POST /api/auth/login HTTP/1.1" 200 -
+2026-08-05 09:30:40,887 - __main__ - INFO - ================================================================================
+2026-08-05 09:30:40,887 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 09:30:40,887 - __main__ - INFO - Listening on port 9999
+2026-08-05 09:30:40,887 - __main__ - INFO - ================================================================================
+2026-08-05 09:30:40,888 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.3:9999
+2026-08-05 09:30:40,888 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 09:34:35,697 - __main__ - INFO - ================================================================================
+2026-08-05 09:34:35,697 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 09:34:35,697 - __main__ - INFO - Listening on port 9999
+2026-08-05 09:34:35,697 - __main__ - INFO - ================================================================================
+2026-08-05 09:34:35,698 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.4:9999
+2026-08-05 09:34:35,698 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 09:36:05,484 - __main__ - INFO - ================================================================================
+2026-08-05 09:36:05,484 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 09:36:05,484 - __main__ - INFO - Listening on port 9999
+2026-08-05 09:36:05,484 - __main__ - INFO - ================================================================================
+2026-08-05 09:36:05,486 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.3:9999
+2026-08-05 09:36:05,486 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 09:41:41,085 - __main__ - INFO - ================================================================================
+2026-08-05 09:41:41,085 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 09:41:41,085 - __main__ - INFO - Listening on port 9999
+2026-08-05 09:41:41,085 - __main__ - INFO - ================================================================================
+2026-08-05 09:41:41,086 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.3:9999
+2026-08-05 09:41:41,086 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 09:42:59,261 - __main__ - INFO - ================================================================================
+2026-08-05 09:42:59,261 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 09:42:59,261 - __main__ - INFO - Listening on port 9999
+2026-08-05 09:42:59,261 - __main__ - INFO - ================================================================================
+2026-08-05 09:42:59,262 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.3:9999
+2026-08-05 09:42:59,262 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 09:48:48,252 - __main__ - INFO - ================================================================================
+2026-08-05 09:48:48,252 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 09:48:48,252 - __main__ - INFO - Listening on port 9999
+2026-08-05 09:48:48,252 - __main__ - INFO - ================================================================================
+2026-08-05 09:48:48,253 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-05 09:48:48,253 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 09:50:55,066 - __main__ - INFO - ================================================================================
+2026-08-05 09:50:55,067 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 09:50:55,067 - __main__ - INFO - Listening on port 9999
+2026-08-05 09:50:55,067 - __main__ - INFO - ================================================================================
+2026-08-05 09:50:55,067 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.3:9999
+2026-08-05 09:50:55,067 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 17:21:44,503 - __main__ - INFO - ================================================================================
+2026-08-05 17:21:44,503 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 17:21:44,503 - __main__ - INFO - Listening on port 9999
+2026-08-05 17:21:44,503 - __main__ - INFO - ================================================================================
+2026-08-05 17:21:44,504 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-05 17:21:44,504 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 17:23:04,539 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-05 17:23:04,540 - werkzeug - INFO - 172.21.0.1 - - [05/Aug/2026 17:23:04] "GET / HTTP/1.1" 200 -
+2026-08-05 17:23:04,647 - __main__ - WARNING - [404] Not found: /favicon.ico from 172.21.0.1
+2026-08-05 17:23:04,648 - werkzeug - INFO - 172.21.0.1 - - [05/Aug/2026 17:23:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-08-05 17:24:10,865 - __main__ - INFO - ================================================================================
+2026-08-05 17:24:10,865 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 17:24:10,865 - __main__ - INFO - Listening on port 9999
+2026-08-05 17:24:10,865 - __main__ - INFO - ================================================================================
+2026-08-05 17:24:10,866 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-05 17:24:10,866 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 17:25:15,808 - __main__ - INFO - ================================================================================
+2026-08-05 17:25:15,808 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 17:25:15,808 - __main__ - INFO - Listening on port 9999
+2026-08-05 17:25:15,808 - __main__ - INFO - ================================================================================
+2026-08-05 17:25:15,808 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.3:9999
+2026-08-05 17:25:15,808 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-08-05 17:25:57,727 - __main__ - INFO - [REQUEST] GET / from 172.21.0.1
+2026-08-05 17:25:57,728 - werkzeug - INFO - 172.21.0.1 - - [05/Aug/2026 17:25:57] "GET / HTTP/1.1" 200 -
+2026-08-05 17:27:31,565 - __main__ - INFO - ================================================================================
+2026-08-05 17:27:31,565 - __main__ - INFO - Mock Netflix Server Started
+2026-08-05 17:27:31,565 - __main__ - INFO - Listening on port 9999
+2026-08-05 17:27:31,565 - __main__ - INFO - ================================================================================
+2026-08-05 17:27:31,566 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9999
+ * Running on http://172.21.0.2:9999
+2026-08-05 17:27:31,566 - werkzeug - INFO - [33mPress CTRL+C to quit[0m

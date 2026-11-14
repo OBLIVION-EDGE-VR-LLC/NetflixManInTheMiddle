@@ -1,0 +1,14 @@
+ale.netflix.com
+android-appboot.netflix.com
+app.netflix.com
+appboot.netflix.com
+cloud.netflix.com
+games.netflix.com
+help.netflix.com
+logs.netflix.com
+msg.netflix.com
+netflix.com
+prod.netflix.com
+qr.netflix.com
+web.netflix.com
+www.netflix.com
